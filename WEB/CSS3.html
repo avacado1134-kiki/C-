@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css box model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        background-color: blanchedalmond;
+      }
+      /* yeh woh property hai jo dono given div mein dena chahenge */
+      .box1 {
+        color: rgb(226, 73, 162);
+        padding: 10px;
+        border: 3px solid blue;
+        margin: 5px;
+        height: 30px;
+        /* balki actual height ki def hoti hai ki jo height hai woh sirf element ki height hai usme padding or border included nhi hai */
+        box-sizing: border-box;
+        /* i.e yeh jo 30 height batai hai maine woh border and padding ko add karke h margin added nhi h */
+      }
+      /* yeh woh specific div ke liye hai jiska box1 class hai */
+      .box2 {
+        color: aqua;
+        padding: 10px;
+        border: 3px solid blue;
+        margin: 25px;
+        height: 30px;
+      }
+      /* yeh woh specific div ke liye hai jiska box2 class hai */
+
+    </style>
+  </head>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am a another box</div>
+    <img src="box model.png" width="244" alt="box model">
+    <div>
+        Total Width=width+ left padding+ri8 padding+left+ri8 border+left+ri8 margin
+
+    </div>
+    &nbsp;
+    <div>
+        Total Height=height+top+bottom padding+top+bottom margin+top+bottom border
+
+    </div>
+<!-- total height and width gherega yeh element -->
+ <!-- margin collapse: jo jiski margin dono mein se zyada hogi whi lag jayegi -->
+</body>
+</html>

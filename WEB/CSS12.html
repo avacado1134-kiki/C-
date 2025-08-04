@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      /* for assigning global variables */
+      :root {
+        --color: rgb(231, 231, 71);
+        --seccolor: yellowgreen;
+        --defpad: 23px;
+        --defop: 0.2;
+        /* now sirf do variables ko change karke main apni puri website ke color,padding,opacity etc..,string,numbers,values ko change kar sakti hun
+         hame specific har jgh pe jaakar changes karne ki jarurat nhi h */
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* div:first-child{
+        background-color: red;
+    } */
+      .nav {
+        /* background-color: yellow; */
+        background-color: var(--color);
+      }
+      ul li {
+        list-style: none;
+        /* margin: 30px; */
+        padding: var(--defpad);
+        opacity: var(--defop);
+        /* --color:pink; */
+        border: 2px solid var(--seccolor);
+      }
+      ul {
+        display: flex;
+      }
+      li:first-child {
+        --color: green;
+        /* we declared a local variable here  */
+        /* we rewrite the color variable locally */
+        background-color: var(--color);
+      }
+      .container {
+        /* background-color: yellowgreen; */
+        background-color: var(--seccolor);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+      </ul>
+    </div>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+      adipisci velit aspernatur ipsam? Velit repellat aspernatur debitis facilis
+      distinctio libero ab. Perferendis quam expedita laborum cum, hic
+      asperiores, numquam alias nobis nisi, aperiam sint. Facere aliquam
+      pariatur culpa natus quos maxime rerum molestiae commodi veritatis.
+    </div>
+  </body>
+</html>

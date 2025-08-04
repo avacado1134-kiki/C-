@@ -1,0 +1,51 @@
+<!-- Write a html and css code to style a para inside a div which contains 5
+    other paras.The first para must have bc yellow and text color red.The other
+    paras must have bc blue and text color white. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise</title>
+    <style>
+      
+      div p:first-child {
+      /* div p:nth-child(2){ */
+        /* jab second child ho apne parent ka */
+        color: red;
+        background-color: yellow;
+      }
+      p {
+        color: white;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque hic
+        in eum natus sapiente labore cum assumenda numquam possimus ut harum
+        debitis, ullam nemo, sunt, quibusdam velit tenetur cupiditate quas illo
+        porro vitae laboriosam! Delectus consequuntur quaerat autem facilis eum
+        saepe, odit accusamus dignissimos eaque.
+      </p>
+      <p>im para2</p>
+      <p>im para3</p>
+      <p>im para4</p>
+      <p>im para5</p>
+    </div>
+
+    <div>
+      <p>
+        oriosam! Delectus consequuntur quaerat autem facilis eum
+        saepe, odit accusamus dignissimos eaque.
+      </p>
+      <p>im para2</p>
+      <p>im para3</p>
+      <p>im para4</p>
+      <p>im para5</p>
+    </div>
+
+  </body>
+</html>

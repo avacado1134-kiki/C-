@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS shadows</title>
+    <style>
+      .box {
+        padding: 34px;
+        border: 2px solid rgb(45, 110, 31);
+        box-shadow: inset 5px 5px 5px #bfd447;
+        /* box-shadow: h-offset v-offset blur spread color inset */
+        /* outset value jo bhr ki shadow se khelenge
+        inset value jo ki andar ki shadow se khelenge */
+      }
+      .text_shadow {
+        /* text-shadow: 2px 2px 4px #5b2929; */
+        text-shadow: -15px 8px 3px #7c3cb3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">im a box</div>
+    <p class="text_shadow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+      blanditiis quam, porro sequi nulla ipsa corrupti, enim iusto iure deleniti
+      eius rem? Iure, veniam incidunt. Minus architecto corrupti a qui quod?
+      Dolores laborum corporis doloribus aliquid commodi omnis pariatur alias,
+      reiciendis velit recusandae veritatis eaque. Ut, nisi veritatis. Quos
+      deleniti labore placeat! Necessitatibus veniam ab quisquam.
+    </p>
+  </body>
+</html>
+
+<!--h-offset and v-offset: determines the shadow's horizontal and vertical position
+blur: the larger the value, the blurier the shadow
+spread:expands or shrinks the shadow size
+color:defines the shadow color
+inset: makes the shadow inner  -->

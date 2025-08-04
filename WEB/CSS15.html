@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS selectors</title>
+    <style>
+      .box:first-child {
+        background-color: red;
+      }
+      /* <!-- .box agar apne parent ka first child hai toh uska bc red ho jaye --> */
+      .box::first-line {
+        /* i.e Uss device ki first line aise kuch specific nhi hai ki itna hi words first line kehlata hai
+         jitna device lega as first line uspe applicable hoga */
+        color: rgb(23, 230, 33);
+      }
+
+      /* jo boxes ke andar woh saare ko access karne ke liye yeh *(selector specificity) use karenge nhi toh pyre pe ek hi border lagega*/
+      .boxes * {
+        border: 2px solid black;
+      }
+
+      /* [data-color="primary"]{ */
+      p,
+      a,
+      .box,
+      [data-color="primary"] {
+        /* iss tarah se ham grouping kar sakte hai */
+        /* margin-top: 55px; */
+        padding-top: 44px;
+      }
+
+      .box:nth-child(odd) {
+        /* i.e odd element or child of class box */
+
+        /* .box:nth-child(even){ */
+        /* i.e even element or child of class box */
+        background-color: blue;
+      }
+      .box :nth-last-child(1) {
+        /* niche se pehla yellow ho jayega */
+        background-color: yellow;
+      }
+      .boxes::before{
+        /* can be after also */
+        content: "hey how are u";
+        background-color: yellow;
+        /* The content element can be dynamically inserted using css style before the element of the actual content */
+      }
+
+      ::selection{
+        /* main kisi element ke conjuction mein nhi balki aise hi likhenge taaki sare page ke seletion ke liye kaam kare woh */
+        color: rgb(202, 30, 79);
+      }
+      .box::first-letter{
+        color:peru;
+        font-size: 30px;
+      }
+
+      input ::placeholder{
+        color:rgb(83, 7, 7);
+        font-size: 56px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div data-color="primary" class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi esse
+        voluptatum cum sequi aut voluptatem praesentium ipsam, possimus adipisci
+        adipisci animi pariatur error odio cupiditate laboriosam do loribus?
+      </div>
+      <div class="box">Hey I am a box</div>
+      <div class="box">Hey I am a box</div>
+      <input type="text" placeholder="Type ur desire here">
+    </div>
+  </body>
+</html>

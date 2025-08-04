@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* element selector */
+        div{
+             background-color: rgb(101, 131, 131); 
+        }
+        /* 1. class selector */
+        .red{
+            background-color: rgb(124, 87, 159);
+        }
+        /* .red maens class is red uska bc woh kar do */
+
+        /* 2. Id selector */
+        #green{
+            color: rgb(11, 16, 14);
+        }
+        /* 3. child selector 
+        it means that jo bhi tag hai uska direct child hona chahiye tabhi implement hoga
+        for example agar div ke andar article tag ke andar agar p hoga toh this will not work as p uska direct child nhi hai*/
+        div p{
+
+            color:rgb(112, 37, 37);
+            background-color: rgb(151, 186, 186);
+
+        }
+        /*  Decendant selector 
+        in this even the tag is not the direct child of the given tag then also the given instructions will work
+        for example agar div ke andar article tag ke andar agar p hoga toh this will work as p uska direct child nhi hai still will work as given*/
+        div p{
+            color:rgb(112, 37, 37);
+
+            
+        }
+        /* Universal Selector */
+        * {
+            margin:0;
+            padding:0;
+
+        }
+        /* pseudo selector */
+        a:visited {
+            color: rgb(74, 12, 44);
+        }
+        a:link{
+            color: rgb(131, 182, 21);
+        }
+        a:active{
+            background-color: blueviolet;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: rgb(71, 71, 130);
+        }
+        /* i.e jhn jhn p apne parent tag ka first child hai whn whn bc blue ho jayega */
+
+
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        Iam KIKI
+        
+        <p>Now i am making a consult from others abt my being one </p>
+        <p>Now i am making a consult from others abt my being one </p>
+
+
+    </div>
+    <div id="green">
+        None of the work is uo to the mark on which company can rely on
+    </div>
+    
+    <a href="http://www.google.co.in">Go to google</a>
+    <a href="http://www.codewithharry.com">Go to harry5</a>
+    <a href="http://www.example.com"> example wriiten</a>
+    <main>
+        <p>IM first</p>
+        <p>IM second</p>
+    </main>
+    </body>
+</html>

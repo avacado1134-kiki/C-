@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        height: 330px;
+        width: 90vw;
+        margin: 3px;
+        padding: 3px;
+        border: 2px solid black;
+      }
+      .box1 {
+        background-color: green;
+        /* top: 90px;
+        left: 67px; */
+        /* position: sticky; */
+        /* chipki hui rahegi usi position mein */
+        /* top:0px;
+        height:111px;
+        width:100%;
+        margin: 0px;
+        padding:0px; */
+        /* position: relative; */
+        /* i.e will not change anything */
+        /* z-index: 1; */
+        /* z-index se box ki position jo relatively neeche thi woh upar ho jayegi box 2 se */
+        position: absolute;
+        top: 0px;
+        left: 3px;
+        /* yeh likhe hai iska mtlb box1 jakr apne parent se puchega ki kya aap position element hai, woh bolega nhi main nhi hun toh box1 bolega BYE.
+        Phir woh jakar apne dada se puchega i.e <body> ki kya aap position element hai, woh bolega nhi main nhi hun toh box1 bolega BYE.
+        Phir woh jakar par dada ji se puchega i.e <html> ki kya aap position element hai, woh bolega nhi main nhi hun lekin mere upar koi nhi hai toh tm mere relative lag jao. */
+      }
+      .box2 {
+        background-color: hotpink;
+        /* position: relative; */
+        /* the position will change relatively */
+        top: 56px;
+        left: 45px;
+      }
+      .box3 {
+        background-color: purple;
+        position: fixed;
+        /* always will be fixed no matter main page ko kitna bhi scroll kar dun */
+        bottom: 0px;
+        left: 8vw;
+      }
+      .box4 {
+        background-color: turquoise;
+      }
+
+      .parent {
+        padding: 170px;
+        margin: 55px;
+        border: 2px solid black;
+        /* position: absolute; */
+        /* ab parent div bhi position element ho gya ab iske relative lagega box1 */
+        /* tranform,filter or perspective properties can also make an element appear as positioned  */
+        transform: translate(0);
+        /* OR */
+        filter: invert(0);
+        /* OR */
+        perspective: 0em;
+        /* agar positioning nhi ki hui ki hai lekin transform,filter,perspective use kiye hue hai tab bhi box1 apni parent ke relative set hoga*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+    </div>
+  </body>
+</html>
+<!-- fixed mtlb jo diwaal pe screw se fix ho jaye kuch bhi karle hile ga nhi
+ balkisticky ka mtlb hai ki jab tak aap page ke about scroll nhi karoge tab tak toh static work karega and jab bhi scroll karenge toh woh diwaal pe chipak jayega  -->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sizing units</title>
+    <style>
+      .box {
+        box-sizing: border-box;
+        border: 2px solid blue;
+        /* width:2048px; */
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        background-color: aqua;
+      }
+      .container {
+        box-sizing: border-box;
+        border: 2px solid blue;
+        border-radius: 5px;
+        /* width:2048px; */
+        width: 80vw;
+        /* i.e 80%of the width of viewport*/
+        height: 80vh;
+        /* i.e 80% of the height of viewport */
+        margin: 20px auto;
+        /* jo 20 px hai woh top bottom ki margin h aur jo auto hai woh left right ki auto */
+        font-size: 9px;
+        /* container ka font size whi hoga ho hamneisko diya h i.e 9px */
+        outline: 2px solid black;
+        /* border andar hoga and outline bhr hogi */
+        /* outline border to follow karegi if border curve kiye toh outline bhi curve hogi */
+        outline-offset: 6px;
+        background-color: rgb(216, 117, 185);
+      }
+      .container p {
+        font-size: 2em;
+        /* i.e yeh 9px ka 2X ho jayega uska font i.e 18ho jayega */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        expedita, est similique maxime omnis ipsam ullam praesentium eaque
+        atque! Illum magni ipsa accusamus reprehenderit quia quam. Nihil,
+        debitis et officiis error autem possimus expedita quo, vitae vel
+        aliquid, nesciunt excepturi similique consequatur labore minima quidem
+        ducimus nam amet enim atque. Odit numquam culpa facere distinctio
+        officiis.
+      </p>
+    </div>
+  </body>
+</html>

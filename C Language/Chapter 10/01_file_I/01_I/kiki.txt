@@ -1,0 +1,9 @@
+69the no. is 868
+
+agar manually yahn hame no. chahiye toh ab append mode wale file ko chalao
+yahan no. likho:868
+
+
+
+
+Kabhi bhi character read aur write karna h kisi file mein to use FGETC() and FPUTC()c

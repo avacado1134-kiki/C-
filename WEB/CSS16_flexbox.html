@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      .container {
+        height: 80vh;
+        border: 2px solid red;
+        display: flex;
+        /* left to right element to settle kar dega i.e ek horizontal line mein saara element laa dega*/
+        justify-content: center;
+        /* for content to be in center */
+        /* yeh horizontal vertical nhi dekhe ga yeh flex direction dekhega phir, main axis mein center kar dega */
+        justify-content: space-between;
+       /* isme spaces aayegi between items but not at the start and end */
+        justify-content: space-around;
+        /* isme spaces aayegi between items and also at start and end */
+        justify-content: end;
+        /* line kle end pe chal jayega */
+        /* there is no justify-items in flexbox */
+
+        align-items: flex-end;
+        /* end pe chal jayega vertically i.e box ke end line mein */
+        align-items: center;
+        /* yeh vertically center ho jayenge container mein, upar niche har jgh se beech mein */
+
+        flex-direction: column;
+        flex-direction: column-reverse;
+        /* reversely column wise set kar dega */
+        flex-direction: row;
+        flex-direction: row-reverse;
+
+        flex-wrap: wrap;
+        /* taaki woh boxes overflow naa kare i.e lipat jayega jo naya content hai eoh next line niche aate rahe */
+
+        flex-flow: row wrap;
+        align-content: center;
+        /* for more then one line ke content ko center karna ho */
+        align-content: flex-end;
+        align-content: flex-start;
+
+        gap: 30px;
+        /* by this property automatically gaps aa jayenge */
+        row-gap: 40px;
+        column-gap: 40px;
+        gap: 40px 10px;
+        /* also written as gap: rowgap  columngap */
+      }
+      .item {
+        height: 32px;
+        width: 32px;
+        border: 2px solid black;
+        /* margin: 4px; */
+        padding: 6px;
+        /* size of boxes */
+        background-color: blueviolet;
+        .order-1 {
+          order: 1;
+        }
+
+        .order-2 {
+          order: 2;
+        }
+        /* yeh jo order property hoti h usme jitna baad mein order aayega utna baad mein element hoti h */
+      .item1 {
+        flex-grow: 2;
+        /* double jgh lega relative to other items  */
+      }
+      flex-shrink: 2;
+      /* double speed se shrink hogi */
+      align-self: flex-start;
+      /* sirf apne aap ko allign kar le */
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item">2</div>
+      <div class="item order-1">3</div>
+      <div class="item order-2">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>

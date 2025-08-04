@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float And Clear</title>
+    <style>
+      .cards {
+        border: 2px solid black;
+        display: flow-root;
+      }
+      img {
+        float: left;
+        /* <!-- "Float" jo hai woh left side float kar jayega aur allow kar dega apne right side par saare content ko --> */
+      }
+      .card {
+        border: 2px solid red;
+      }
+      .card:nth-child(3){
+        background-color: aqua;
+        clear:left;
+         /* clear kar dega uske left mein jitna bhi image tha and niche ghiska dega content ko */
+
+         /* clear:both; */
+        /* yeh wala div keh rha h nah hi left mein dikh jana naah hi right mein dono jgh se hat jao */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <img src="ladakh.png" alt="" width="210" />
+      <!-- OR -->
+      <!-- <input type="image" src="ladakh.png" width="210"> -->
+      <div class="card">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi in,
+          consequuntur voluptatem explicabo sunt non a quo dolorum earum
+          voluptatum vero nemo, voluptas velit consectetur vitae quaerat impedit
+          nostrum mollitia, cumque exercitationem nisi excepturi quae!
+        </p>
+      </div>
+      <div class="card">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae explicabo
+        non rem natus quidem laborum dicta et nihil eos sunt veniam delectus ut,
+        perferendis doloremque necessitatibus, optio quia obcaecati beatae dolor
+        autem impedit ipsam nobis cumque. Libero dolore, placeat unde cumque
+        sapiente sunt quae excepturi neque. Explicabo placeat nihil facilis
+        perspiciatis repellendus obcaecati officia voluptate neque maxime eum
+        sit natus magnam asperiores dolore, architecto voluptatum. Magnam libero
+        adipisci, possimus beatae sint nesciunt commodi? Praesentium impedit
+        incidunt sequi minima soluta ad, voluptates quas iste est adipisci
+        molestiae enim possimus aut voluptatum ut repellendus. Neque ad
+        laboriosam qui? Eligendi libero atque vero rerum, numquam sint
+        dignissimos laborum ex eius tempora eaque porro corporis quae,
+        repellendus voluptatum cupiditate maiores, dicta minima. Cupiditate
+        inventore expedita saepe excepturi quos placeat sint earum perspiciatis
+        corporis adipisci repellendus, delectus, quae totam fugiat architecto
+        vero? Obcaecati quae nam deleniti animi! Ipsam in dolorum voluptatem?
+        Hic fugiat eos ea, dolor sed vitae sunt itaque rerum quisquam sit
+        quibusdam illo architecto, accusantium doloribus expedita labore illum
+        neque, sint deserunt? Odio exercitationem sunt neque quaerat minima
+        dolorum obcaecati incidunt earum, enim pariatur at libero omnis
+        necessitatibus impedit deserunt illo architecto voluptatum magni
+        recusandae laborum labore aliquam tempore minus! Commodi magni quisquam
+        consequuntur hic cupiditate similique nobis veniam numquam quia
+        inventore ab suscipit molestiae consequatur repellendus eligendi animi
+        placeat assumenda, ea nesciunt dolorum magnam laudantium ipsum voluptas
+        fuga. Vero veritatis pariatur neque ex dolore quisquam adipisci. Atque
+        voluptatem distinctio necessitatibus laboriosam neque beatae
+        perspiciatis fugit reiciendis nesciunt qui libero hic reprehenderit
+        nostrum maxime dolor deserunt est eos, nulla praesentium fugiat maiores
+        provident officia! Nisi dolores exercitationem autem numquam dolorum
+        facilis totam quos pariatur repellat accusamus? Quibusdam voluptates
+        fugiat nemo sed ad quidem totam sint modi aliquam. Unde corporis atque
+        dolorum consectetur earum voluptatem, natus itaque assumenda.
+        Voluptates, accusantium. Voluptas doloremque voluptatum veniam totam
+        quia qui, autem quam architecto aliquid, temporibus voluptates, quis ad
+        reiciendis doloribus alias at fugit dicta dolorum ipsum praesentium
+        molestias reprehenderit mollitia iusto id! Quae error optio aut
+        necessitatibus sunt assumenda nostrum.
+      </div>
+      <div class="card">CARD3</div>
+    </div>
+  </body>
+</html>

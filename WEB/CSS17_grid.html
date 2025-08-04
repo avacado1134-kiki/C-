@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS grid</title>
+  </head>
+  <style>
+    .container {
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns: 120px 100px ; 
+      /* grid-template-columns: [pehla]100px [doosra] 100px [t]; */
+      grid-template-rows: 100px 100px 100px;
+      /* we can also write by giving names to areas */
+      grid-template-areas: "nav nav nav"
+                           "side article article"
+                           "footer footer footer";
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 34px;
+      row-gap: 22px;
+      column-gap: 34px;
+      justify-items: start;
+      align-items: left;
+      justify-self: start;
+      align-self: center;
+      place-content: center;
+    }
+    .item{
+        border:2px solid red;
+        height:55px;
+        /* width:55px; */
+    }
+    .item1{
+      grid-area: nav;
+      background-color: aqua;
+    }
+    .item2{
+      grid-area: side;
+      background-color: rgb(236, 161, 32);
+    }
+    .item3{
+      grid-area: article;
+      background-color: rgb(111, 196, 32);
+    }
+    .item4{
+      grid-area: footer;
+      background-color: rgb(185, 141, 239);
+    }
+    .item5{
+      grid-area: nav;
+    }
+    .item4{
+      /* grid row start,grid row end */
+      grid-row: 1/2;
+      /* or */
+      /* grid-row-start: 1;
+      grid-row-end: 2; */
+      grid-column: 1/2;
+      /* grid column start,grid column end */
+    }
+    .item1{
+       grid-row: 1/2;
+       grid-column: 1/2;
+        /* overlap ho gyi 1 pe 4 */
+
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+      <div class="item item5">5</div>
+    </div>
+    <div>
+      <img src="grid css.png" width="500px" alt="hello">
+    </div>
+  </body>
+</html>

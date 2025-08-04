@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+  <body>
+    <h1>Access form</h1>
+    <form action="post">
+      <div>
+        <label for="user id">enter ur username</label>
+        <input type="text" id="user id" name="kiki" placeholder="enter name" />
+      </div>
+
+      <div>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">MALE</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">FEMALE</label>
+      </div>
+      <div>
+        <input type="checkbox" id="subs" name="subscribe" value="yes" />
+        <label for="subs">Subscribe kiki</label>
+      </div>
+      <div>
+        <textarea name="comment" id="comment" cols="30" rows="3"
+        placeholder="Enter ur data"></textarea>
+      </div>
+      <div>
+        <select name="fruits" id="kiki's fruits">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="grapes">Grapes</option>
+        </select>
+      </div>
+    </form>
+
+    <!--hamlog dono ka name=gender hi isiliye rakhe taki ek baari mei ek hi check ho
+    dono saath mein na ho jo input tag ki id hai use hi daal dena chahiye label
+    mein so that not only box but also the word like female if pressed get
+    selected
+
+    <input type="text" required>i.e mandatory to fill-->
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property</title>
+    <style>
+      * {
+        /* border: 2px solid blue; */
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        border: 2px solid green;
+        display: inline-block;
+        padding: 45px;
+        margin: 45px;
+        /* as hamne ise inline element bana diya hai toh inline element mein top se padding and margin inherit nhi karta hai but will inherit from all sides if its not an inline element */
+        /* apply display:inline-block for accessing both from top also */
+        width: 45px;
+        /* the display:inline property prevenbts width from having an effect 
+    for this to access write display:inline-block*/
+      }
+      .box1 {
+        display: flex;
+        flex-direction: row;
+        display: grid;
+        /* display: none; */
+        /* visibility: hidden; */
+        /* yeh karne se jo jo styling kiye the woh sab hatt jayega */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">U are mine!</div>
+    <div class="box">Hello how are u!</div>
+    <!-- its not an inline element but can make it inline element by setting display property as inline -->
+    <span>I am yours</span>
+    <span>Also we are us!!</span>
+    <!-- span is an inline element ek hi line mei aayega dono line  -->
+  </body>
+</html>

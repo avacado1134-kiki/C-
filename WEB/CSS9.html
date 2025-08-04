@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling lists</title>
+    <style>
+      nav ul li{
+          list-style:devanagari;
+          /* this is called marker which is outside of list item  but by using list style position we can bring it inside*/
+          /* list-style:none;  i.e nothing it will, be blank*/
+          background-color: yellow;
+          list-style-position: inside;
+          border: 2px solid black;
+          list-style-image:url("https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2F524739794101814535%2F&psig=AOvVaw2xdbKimrhzbTsr13uk5Oaw&ust=1746181464446000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCmsIOHgo0DFQAAAAAdAAAAABAd");
+          list-style-type: "😁" ;
+          /* this emoji shortcut is(windows+.) */
+          /* list-style-type:  disc inside url();    we can do all three at once   */
+      }
+          </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>

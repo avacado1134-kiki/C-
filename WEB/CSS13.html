@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: red;
+
+        }
+        /* Format of media query
+
+        @media not|only mediatype and (expressions)
+        CSS-code;       screen or speechdevices  */
+        @media  only screen and (max-width:455px){
+            /* like 455px se bada hua toh yeh style nhi lagenge phir jo diya hua h bc:red woh lagega*/
+            body{
+                background-color: blue;
+            }
+        }
+        @media only screen and (orientation: landscape){
+            body{
+                border : 2px solid purple;
+            }
+            }
+        
+        
+        .boxes{
+            flex-direction: column;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hey I am a red body guy.
+        Kiki bimar hai❤️‍🩹
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

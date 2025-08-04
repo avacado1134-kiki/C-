@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid exercise</title>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-around;
+        /* its a property of flexbox */
+        align-items: center;
+        font-family: "Segoe UI";
+      }
+      ul {
+        display: flex;
+        gap: 34px;
+      }
+      ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      .first{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px ;
+         justify-content: center; 
+        /* aligns items inside container in horizontal axis */
+        align-items: center;
+        /* aligns items inside container in vertical axis i.e top to bottom*/
+        /* we write them both together so that it becomes center from all sides top bottom left ri8 all */
+        gap: 63px;
+        margin: 70px;
+        font-family: sans-serif;
+        
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns */
+        gap: 10px;
+      }
+
+      .b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+      }
+      .box {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            width="164px"
+            src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png"
+          />
+        </div>
+        <ul>
+          <li>About</li>
+          <li>Product</li>
+          <li>Contact</li>
+          <li>Finalise</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="first">
+        <span> Download the <b>Ultra Edit </b> here! <img src="rating.avif" width="34" alt=""> </span>
+        <div>Download and edit Ultra Edit.This may include all the ful support system in the editor.</div>
+        <div><button>
+          DOWNLOAD FOR MAC AND WINDOWS VERSION
+        </button></div>
+      </section>
+    </main>
+
+    <div class="grid">
+      <div class="b">
+        <div class="box">English</div>
+        <div class="space">
+          <button>Download 32-bit</button>
+          <button>Download 64-bit</button>
+        </div>
+        <div class="box">Spanish</div>
+        <div class="space">
+          <button>Download 32-bit</button>
+          <button>Download 64-bit</button>
+        </div>
+        <div class="box">Hindi</div>
+        <div class="space">
+          <button>Download 32-bit</button>
+          <button>Download 64-bit</button>
+        </div>
+        <div class="box">Russian</div>
+        <div class="space">
+          <button>Download 32-bit</button>
+          <button>Download 64-bit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!-- THE CASCADE ALGORITHM
+ 1.Position and order of appearance
+ 2.Specificity order
+ inline style > ID selector > class or attribute selector > element selector > universal selectpr
+ 3.Origin
+ 4.Importance -->
+
+<!-- Speficity calculation
+  1.Universal selector:0
+  2.Elemental selectors and pseudo element:1
+  3.Class selectors,attribute selectors and pseudo classes:10
+  4.ID selectors:100
+  5.Inline style:1000 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cascading</title>
+    <style>
+      h1 {
+        color: aqua;
+      }
+      /* the specificity of this selector is 10*/
+
+      h1.yellow {
+        color: yellow;
+      }
+      /* the specificity of this selector is 10+1=11*/
+
+      h1.red {
+        /* rewrite kar diya */
+        color: red;
+      }
+      /* the specificity of this selector is 10*/
+
+      .purple {
+        color: purple;
+      }
+      /* agar same type ka selector hai toh ek tarah se overwrite ho jayega
+mtlb jo last mein likhe h use preference mil jayegi  */
+      /* the specificity of this selector is 10*/
+
+      [data-x="a"] {
+        background-color: aquamarine;
+      }
+      p {
+        color: red !important;
+        /* its important and necessary ab isko lagu karna hi hoga CSS ko yani ki yeh ab yeh*/
+      }
+      p {
+        color: blue;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div>
+      <h1 data-x="a" class="yellow red purple">CSS Speciality</h1> 
+    
+      <!-- <h1 style="color: blue"</h1> data-x="a" class="yellow red purple">CSS Speciality</h1>   INLINE CSS CODE-->
+      <!-- ab yeh dekhega bhi nhi ki tmne css mein kya likha h  inline style ko sabse zyada priority dega 
+         agar isko hata denge tab baat aagyi id selector ke specificity pe-->
+      <!-- this is attribute selector -->
+      <p>This is my specificity and cascading</p>
+    </div>
+  </body>
+</html>
+

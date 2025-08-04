@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow</title>
+    <style>
+      .box {
+        width: 45vw;
+        height: 18vh;
+        border: 2px solid black;
+        /* overflow kar rha hai isse bachne ke liye kuch kuch kar sakte hai*/
+
+        overflow: scroll;
+        /* scrool mtlb even yhn sab thk bhi hai na tab bhi scrool bar aayega */
+        overflow: auto; 
+        /* auto ka mtlb agar yeh overflow karega toh scroll bar dikha denge lekin agar nhi karega toh nhi dikhayenge */
+        overflow:hidden;
+        overflow: clip; 
+        /*same as hidden but  clip se aap programmatically jo scrolling hoti hai usko bhi nhi kar sakte */
+
+        /* we can control overflowing in x and y seperately */
+        overflow-x: hidden;
+        overflow-y: scroll;
+        /* also can be written as direct ki hidden kardo x mein and scroll kar do y mein*/
+        overflow: hidden scroll;
+                /* x      y */
+
+        white-space: inherit;
+        /* i.e jo tha whi rahega */
+        white-space: nowrap;
+        /* toh horizontally yeh puri space legi i.e scroll bar hogi but verically kuch nhi legi  */
+        text-overflow: ellipsis;
+        /* to be continued... wale dots aa jate hai isse */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga dicta,
+      iusto quidem velit temporibus labore, sunt minus debitis eum mollitia odit
+      quisquam. Earum id, nulla illo ducimus repellendus officia, ex blanditiis
+      ullam dolorem eveniet, cum labore! Officia iure veniam magnam
+      necessitatibus corrupti? Reiciendis, voluptatum?
+    </div>
+  </body>
+</html>
