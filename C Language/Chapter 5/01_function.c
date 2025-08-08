@@ -1,7 +1,7 @@
 #include <stdio.h>
 // Function prototype
-int sum(int, int); // hamesha likhni chahiye acchipractise hoti h
-void display(); // void mtlb yeh kuch bhi return nhi karegi ,, for returning kuch toh type do usko
+int sum(int, int); // hamesha likhni chahiye acchi practise hoti h
+void display(); // void mtlb yeh kuch bhi return nhi karegi , for returning kuch toh type do usko
 
 //  Function definition
 int sum(int x, int y) //x and y are parameters

@@ -7,6 +7,7 @@ int main()
     for (int i = 1; i <= n; i++)// initialise;test;increment/decrement
     {                                       
         printf("enter value of i %d\n", i); // i.e condition check hogi true hai toh block execute hogi then i update hogi
+    printf("%d",i+i-1);
     }
     return 0;
 }

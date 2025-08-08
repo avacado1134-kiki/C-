@@ -3,7 +3,7 @@ int factorial(int);
 // factorial(n)=1x2x3x4....xn-1xn
 int factorial(int n)
 {
-    if (n == 1 || n == 0) // Base condition hai yeh jo yeh insure karti hai ek rucurrsive program mein ki recurssive program end ho rha h
+    if (n == 1 || n == 0) // Base condition hai yeh jo yeh ensure karti hai ek rucurrsive program mein ki recurssive program end ho rha h
     {
         return 1; //so ek baar return ho gya phir uske nivhe ka kuch bhi call ya return nhi hota hai
     }
