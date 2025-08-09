@@ -5,7 +5,7 @@ int factorial(int n)
 {
     if (n == 1 || n == 0) // Base condition hai yeh jo yeh ensure karti hai ek rucurrsive program mein ki recurssive program end ho rha h
     {
-        return 1; //so ek baar return ho gya phir uske nivhe ka kuch bhi call ya return nhi hota hai
+        return 1; //so ek baar return ho gya phir uske niche ka kuch bhi call ya return nhi hota hai
     }
     // factorial(n)=factorial(n-1)x n
     return n * factorial(n - 1);
