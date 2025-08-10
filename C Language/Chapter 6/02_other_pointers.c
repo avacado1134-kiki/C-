@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 int main()
-// jo pointer declare karna hai woh usi type ka karna hai woh usi type ka karna hai jis type ka aap variable storekarne wale ho
+// jo pointer declare karna hai woh usi type ka karna hai jis type ka aap variable storekarne wale ho
 {
     char k = 'A';
-    char *j = &k; // j is a character pointer(j is a pointer pointing to i)  printf("The address of i is %p\n", &i); //%p is for the address to be printed in actual form hexa decimal
-    printf("The address of k is %p\n", j);
+    char *j = &k; // j is a character pointer(j is a pointer pointing to k) 
+    printf("The address of k is %p\n", j);//%p: hexadecimal form
     printf("The address of k is %p\n", &k);
     printf("The value at address of j is %d\n", *j);    // ascii  value i.e 65
     printf("The value at address of j is %d\n", *(&k)); // ascii  value i.e 65

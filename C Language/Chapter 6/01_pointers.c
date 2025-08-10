@@ -10,7 +10,7 @@ int main()
     printf("The address of i is %p\n", j);
     printf("The value at address of j is %d\n", *j);    // 70
     printf("The value at address of j is %d\n", *(&i)); // 70
-    printf("The address of j is %p\n", &j); //jo address dtore karta hai uska bhi toh address hoga na
+    printf("The address of j is %p\n", &j); //jo address store karta hai uska bhi toh address hoga na
 
     return 0;
 }
