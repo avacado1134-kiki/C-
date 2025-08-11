@@ -10,7 +10,7 @@ int main()
     // printf("The address of a is %u\n", i);
     // i++;  //jitna bhi bytes yeh pointer iss architecture mein le rha hai yeh utna times yeh increment ho jayega
     //     //eg. integer agr 4 bytes le rha hai toh 4 increase ho jayega
-    //  iska yeh mtlb nhi hai ki woh 4 kadam aage badh gya woh ek hi kadam badha hai bas uska aage chalne ka paer 4 byyes liye h ek kadam mein.Do kadam mein 8 bytes
+    //  iska yeh mtlb nhi hai ki woh 4 kadam aage badh gya woh ek hi kadam badha hai bas uska aage chalne ka paer 4 bytes liye h ek kadam mein.Do kadam mein 8 bytes
     // printf("The value of i is %u\n", i);
 
 
