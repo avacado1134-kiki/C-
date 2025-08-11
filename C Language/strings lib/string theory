@@ -1,0 +1,42 @@
+                           // Most important and most used <string.h> functions in C
+
+
+1. String Length
+strlen(s) → Get length of a string (excluding \0).
+
+2. Copying
+strcpy(dest, src) → Copy string.
+
+strncpy(dest, src, n) → Copy with a limit.
+
+memcpy(dest, src, n) → Copy raw memory.
+
+memmove(dest, src, n) → Copy memory safely when overlap is possible.
+
+3. Concatenation
+strcat(dest, src) → Append string.
+
+strncat(dest, src, n) → Append with limit.
+
+4. Comparison
+strcmp(s1, s2) → Compare strings.
+
+strncmp(s1, s2, n) → Compare up to n chars.
+
+memcmp(ptr1, ptr2, n) → Compare memory.
+
+5. Search
+strchr(s, c) → Find first occurrence of a char.
+
+strrchr(s, c) → Find last occurrence of a char.
+
+strstr(haystack, needle) → Find substring.
+
+memchr(ptr, c, n) → Find byte in memory.
+
+6. Tokenizing
+strtok(s, delim) → Split string into tokens.
+
+7. Memory Setting
+memset(ptr, c, n) → Fill memory with a value.
+
