@@ -1,3 +1,21 @@
+// reverse the string and tell palindrome or not
+// #include <stdio.h>
+// #include <string.h>
+
+// int main()
+// {
+//     char s1[7];
+//     printf("Enter the string \n");
+//     scanf("%s",&s1);
+//     char s2[7];
+//     strcpy(s2,s1);
+//     printf("Entered string %s \n",s1);
+//     printf("Reversed string %s \n",strrev(s1));
+    
+
+//     return 0;
+// }
+
 #include <stdio.h>
 #include <string.h>
 
