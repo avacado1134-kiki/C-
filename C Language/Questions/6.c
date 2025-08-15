@@ -1,4 +1,6 @@
-// reverse the string and tell palindrome or not
+                                // reverse the string and tell palindrome or not
+
+
 // #include <stdio.h>
 // #include <string.h>
 
